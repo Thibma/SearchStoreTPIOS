@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailProductViewController" customModule="SearchStore" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="4Ag-De-Unx" id="cal-UW-0Tz"/>
+                <outlet property="priceLabel" destination="Awb-JL-w8O" id="bM4-Su-GaY"/>
+                <outlet property="stockLabel" destination="hLh-2H-2B1" id="Ufv-iD-biP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Ag-De-Unx">
+                    <rect key="frame" x="87" y="94" width="240" height="240"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="bGe-Zr-t6t"/>
+                        <constraint firstAttribute="height" constant="240" id="hJ9-Qu-8UL"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prix :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syq-LW-K3H">
+                    <rect key="frame" x="87" y="354" width="38" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x€" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Awb-JL-w8O">
+                    <rect key="frame" x="308" y="354" width="19" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTc-so-PS4">
+                    <rect key="frame" x="164.5" y="812" width="85" height="30"/>
+                    <state key="normal" title="Commander"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="En stock :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iM2-RR-4Do">
+                    <rect key="frame" x="87" y="395" width="74" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nostock" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLh-2H-2B1">
+                    <rect key="frame" x="266" y="395" width="61" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="syq-LW-K3H" firstAttribute="top" secondItem="4Ag-De-Unx" secondAttribute="bottom" constant="20" id="7C9-oQ-gIc"/>
+                <constraint firstItem="iM2-RR-4Do" firstAttribute="top" secondItem="syq-LW-K3H" secondAttribute="bottom" constant="20" id="A4H-E4-ean"/>
+                <constraint firstItem="4Ag-De-Unx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="CPX-2z-OSR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dTc-so-PS4" secondAttribute="bottom" constant="20" id="TNt-6H-gc0"/>
+                <constraint firstItem="Awb-JL-w8O" firstAttribute="trailing" secondItem="4Ag-De-Unx" secondAttribute="trailing" id="Ty6-pF-Phq"/>
+                <constraint firstItem="dTc-so-PS4" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="WEy-uH-V2i"/>
+                <constraint firstItem="hLh-2H-2B1" firstAttribute="trailing" secondItem="4Ag-De-Unx" secondAttribute="trailing" id="Xo8-gn-9tr"/>
+                <constraint firstItem="Awb-JL-w8O" firstAttribute="top" secondItem="4Ag-De-Unx" secondAttribute="bottom" constant="20" id="bGg-ZB-g7o"/>
+                <constraint firstItem="4Ag-De-Unx" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="bh5-L2-TXd"/>
+                <constraint firstItem="hLh-2H-2B1" firstAttribute="top" secondItem="Awb-JL-w8O" secondAttribute="bottom" constant="20" id="iz8-KV-5GJ"/>
+                <constraint firstItem="syq-LW-K3H" firstAttribute="leading" secondItem="4Ag-De-Unx" secondAttribute="leading" id="jOv-8Y-PvU"/>
+                <constraint firstItem="iM2-RR-4Do" firstAttribute="leading" secondItem="4Ag-De-Unx" secondAttribute="leading" id="wYq-8H-Vz0"/>
+            </constraints>
+            <point key="canvasLocation" x="105.79710144927537" y="78.348214285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
